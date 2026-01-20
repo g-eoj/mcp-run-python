@@ -168,9 +168,7 @@ async def async_prepare_deno_env(
 
 
 def _deno_install_args(dependencies: list[str] | None = None, quiet: bool = False) -> list[str]:
-    args = [
-        'run'
-    ]
+    args = ['run']
     if quiet:
         args += ['--quiet']
     args += [
